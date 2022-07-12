@@ -2,6 +2,7 @@ import classes from './style/Form.module.css';
 import React, { useRef } from "react";
 import { useSelector} from 'react-redux'
 import { useState,useEffect } from 'react';
+import { useDispatch } from 'react-redux';
 import axios from 'axios';
 import {Formik, Field, ErrorMessage, Form } from 'formik'
 import * as Yup from 'yup'
@@ -10,6 +11,7 @@ import * as Yup from 'yup'
 
 function Formfunc () {
     const form = useRef();
+    const dispatch= useDispatch();
     const Data=  useSelector(state => state);
     const [recieved, setrecieved]=useState(false);
     const [mssg1,setmssg1]=useState();
@@ -27,8 +29,7 @@ function Formfunc () {
         }
     },[]);
 
-    const handleSubmit = (data) =>  {
-        console.log("GGG");
+    const handleSubmit = (data,{resetForm}) =>  {
         var d = {
             service_id: 'service_miwlgjy',
             template_id: 'template_fkd0794',
@@ -45,7 +46,16 @@ template_params.PromoCode =data.PromoCode;
 template_params.Social_Account =data.Social_Account;
 d.template_params=template_params;
 console.log(d);
-        axios.post('https://api.emailjs.com/api/v1.0/email/send',d).then(res=>{})
+        axios.post('https://api.emailjs.com/api/v1.0/email/send',d).then(res=>{
+            if (res.err){
+                console.log(res.err);
+            }
+            else{
+                alert("Thank you! Your order is sent successfully");
+                resetForm();
+                dispatch({type:"delete"});
+            }
+        })
       }
 
 const initialValues = {
@@ -61,36 +71,36 @@ const schema = Yup.object().shape({
     Email: Yup.string().min(3).email('Invalid email address').required(" Email field is required"),
     Address: Yup.string().required("Address field is required"),
     Social_Account: Yup.string().min(3).required('Social Account filed is required'),
-    PromoCode: Yup.string().min(3) 
+    PromoCode: Yup.string().min(3)
 })
 
     
     return (
         <div>
         <Formik initialValues={initialValues} validationSchema={schema} onSubmit={handleSubmit}>
-            <Form className={classes.shape} >
+            <Form className={classes.shape}>
                 <div className={classes.userbox}>
-                    <Field className={classes.input} type="text" name="name" required=" " />
+                    <Field className={classes.input} type="text" name="name"/>
                     <label className={classes.label}>Username</label>
                     <ErrorMessage className={classes.Err} name='name' component='span'/>
                 </div>
                 <div className={classes.userbox}>
-                    <Field type="text" name="Address" required=" " className={classes.input}/>
+                    <Field type="text" name="Address" className={classes.input}/>
                     <label className={classes.label}>Address</label>
                     <ErrorMessage className={classes.Err} name='Address' component='span'/>
                 </div>
                 <div className={classes.userbox}>
-                    <Field type="text" name="Email" required=" " className={classes.input}/>
+                    <Field type="text" name="Email" className={classes.input}/>
                     <label className={classes.label}>E-mail</label>
                     <ErrorMessage className={classes.Err} name='Email' component='span'/>
                 </div>
                 <div className={classes.userbox}>
-                    <Field type="text" name="Social_Account" required=" " className={classes.input}/>
+                    <Field type="text" name="Social_Account" className={classes.input}/>
                     <label className={classes.label}>Instagram/Facebook</label>
                     <ErrorMessage className={classes.Err} name='Social_Account' component='span'/>
                 </div>
                 <div className={classes.userbox}>
-                    <Field type="text" name="PromoCode" required=" " className={classes.input}/>
+                    <Field type="text" name="PromoCode" className={classes.input}/>
                     <label className={classes.label}>Promocode</label>
                     <ErrorMessage className={classes.Err} name='PromoCode' component='span'/>
                 </div>

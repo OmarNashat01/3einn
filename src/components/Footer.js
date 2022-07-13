@@ -1,6 +1,5 @@
 import React from 'react'
 import classes from './style/footer.module.css'
-import img from '../img/logo.jpg'
 import LinkIcon from '@mui/icons-material/Link';
 import FacebookIcon from '@mui/icons-material/Facebook';
 const Footer = () => {

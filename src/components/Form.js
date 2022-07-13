@@ -1,5 +1,5 @@
 import classes from './style/Form.module.css';
-import React, { useRef } from "react";
+import React from "react";
 import { useSelector} from 'react-redux'
 import { useState,useEffect } from 'react';
 import { useDispatch } from 'react-redux';
@@ -10,10 +10,8 @@ import * as Yup from 'yup'
 
 
 function Formfunc () {
-    const form = useRef();
     const dispatch= useDispatch();
     const Data=  useSelector(state => state);
-    const [recieved, setrecieved]=useState(false);
     const [mssg1,setmssg1]=useState();
     const [mssg2,setmssg2]=useState();
     useEffect (()=>{
@@ -22,7 +20,7 @@ function Formfunc () {
         let mm1 = ms[0];
         setmssg1(mm1);
 
-        if (ms.length==2)
+        if (ms.length===2)
         {
             let mm2 = ms[1];
             setmssg2(mm2);
@@ -112,9 +110,6 @@ const schema = Yup.object().shape({
                 </Form>          
         </Formik>
 
-            <div className={classes.recieve}>
-            {recieved ? <p style={{fontSize:20}}>Thank you! <br/> Order sent successfully</p>:null}
-            </div>
         </div>
     );
 }

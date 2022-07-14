@@ -9,7 +9,11 @@ function App() {
   return (
     <div className="App">
       <Nav/>
-      <Footer/>
+      <Switch>
+      <Route path="/" exact>
+      <Home/>
+      </Route>
+      </Switch>
     </div>
   );
 }

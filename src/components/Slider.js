@@ -25,6 +25,7 @@ function Slider (props) {
 
     return (
         <div className={classes.container}>
+            <div className={classes.contain}>
             {Limage ? <img className={classes.book} src={props.img1} alt="img1"/> : null}
             
             {Mimage ? <img className={classes.book} src={props.img2} alt="img1"/>:null}
@@ -37,6 +38,7 @@ function Slider (props) {
                 <span onClick={Mclick}/>
                 <span onClick={Rclick}/>
             </ul>
+            </div>
         </div>
     );
 }

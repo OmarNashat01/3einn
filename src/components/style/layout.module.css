@@ -38,3 +38,19 @@
 .arrow {
     margin-left: .5rem;
 }
+
+@media screen and (max-width: 1100px) {
+    .layout {
+        background-position: 0 -15%;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .layout {
+        background-image: linear-gradient(
+            to right bottom ,
+            rgba(0, 0, 0, 0.2),
+            rgba(0, 0, 0, 0.2)), 
+            url("shot1.jpg");;
+    }
+}

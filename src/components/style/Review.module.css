@@ -1,4 +1,6 @@
 .vContainer {
+    position: relative;
+    display: block;
     text-align: center;
     border-bottom: solid 2px;
     border-color:rgba(188, 253, 76, 0.4);
@@ -7,6 +9,7 @@
     background-color: rgba(10,10,10,0.9);
     height: 80vh;
     align-items: center;
+    justify-content: center;
 }
 
 
@@ -20,23 +23,9 @@
     transition: .5s ease;
 }
 .videoContainer {
-    width: 50%;
-    margin: auto;
+    position: relative;
+    height: 70vh;
     justify-content: center;
+    align-items: center;
+    align-self: center;
 }
-.videoContainer img {
-    width: 100%;
-    justify-content: center;
-}
-
-@media screen and (max-width: 1000px) {
-    .videoContainer {
-        width: 70%;
-        height: 50vh;
-    }
-
-    .vContainer{
-        height: 80%;
-    }
-  
-  }

@@ -6,10 +6,8 @@ const Layout = () => {
   return (
     <div className={classes.layout}>
        <div className={classes.textBox}>
-                <Link to='/products' className={classes.btn} >
                 <p>shop now </p>
                 <ArrowRightAltIcon fontSize="large"  className={classes.arrow}/>
-                </Link> 
        </div>
         
     </div>

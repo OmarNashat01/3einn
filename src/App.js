@@ -11,7 +11,7 @@ function App() {
       <Nav/>
       <Switch>
       <Route path="/" exact>
-      <Home/>
+        XXXX
       </Route>
       </Switch>
      <Footer/>

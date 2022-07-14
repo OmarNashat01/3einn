@@ -11,7 +11,16 @@ function App() {
       <Nav/>
       <Switch>
       <Route path="/" exact>
-        XXXX
+      XXX
+      </Route>
+      <Route path='/products'>
+        <Allproducts/>
+      </Route>
+      <Route path='/productdetails/:id'>
+        <ProductDetailes/>
+      </Route>
+      <Route to = '/cart'>
+        <Cart/>
       </Route>
       </Switch>
      <Footer/>

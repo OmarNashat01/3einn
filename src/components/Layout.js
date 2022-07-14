@@ -1,4 +1,4 @@
-import React from 'react'
+
 import classes from './style/layout.module.css'
 const Layout = () => {
   return (

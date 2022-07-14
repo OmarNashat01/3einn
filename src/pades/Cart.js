@@ -37,7 +37,7 @@ const Cart = () => {
         </h1>
         {totalAmount=== 0? <div className={classes.head}><h1 >Cart is empty</h1></div> :
         <div className={classes.cont}>
-        { formx ? null :
+        { formx ? <Form /> :
         <div>
             <div className={classes.productContainer} >
             { Data &&

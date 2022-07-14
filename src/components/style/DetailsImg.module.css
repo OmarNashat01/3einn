@@ -53,5 +53,13 @@
     .image {
         height: 350px;
     }
+   
+    .leftarrow {
+        left: 16px;
+    }
+
+    .rightarrow{
+        right: 16px;
+    }
 }
 

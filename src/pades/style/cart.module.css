@@ -44,9 +44,7 @@
 .cartD {
     border-top: solid 1px;
     border-bottom: solid 3px;
-    border-color: rgba(255, 255, 255, 0.15);
-    margin: 2rem 0;
-    
+    border-color: rgba(255, 255, 255, 0.15);   
 }
 .cartD h1 {
     font-size: 2rem;
@@ -200,3 +198,8 @@
     top:0;
 }
 
+@media screen and (max-width: 500px) {
+    .shape .userbox{ 
+        margin-bottom: 10px;
+    }
+}

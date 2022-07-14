@@ -5,11 +5,6 @@ import { Link } from 'react-router-dom';
 const Layout = () => {
   return (
     <div className={classes.layout}>
-       <div className={classes.textBox}>
-                <p>shop now </p>
-                <ArrowRightAltIcon fontSize="large"  className={classes.arrow}/>
-       </div>
-        
     </div>
   )
 }

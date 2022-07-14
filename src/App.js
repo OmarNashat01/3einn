@@ -9,9 +9,7 @@ function App() {
   return (
     <div className="App">
       <Nav/>
-      <Route path="/" exact>
       <Home/>
-      </Route>
     </div>
   );
 }

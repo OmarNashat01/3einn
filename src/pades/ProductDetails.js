@@ -36,25 +36,25 @@ const addHandeler = ()=>{
                <p>Size</p>
                  <div className={classes.fixCon}>
                        <div className={classes.lableCon}>
-                         <label className={classes.container}> <h4>M</h4>
+                         <label className={classes.container}> <h4>S</h4>
                          <input type='radio'  name="radio"/>
                          <span className={classes.checkmark}></span>
                          </label> 
                          </div>
                          <div>
-                         <label className={classes.container}> <h4>S</h4>
+                         <label className={classes.container}> <h4>M</h4>
+                         <input type='radio' name="radio"/>
+                         <span className={classes.checkmark}></span>
+                         </label> 
+                         </div>
+                         <div>
+                         <label className={classes.container}> <h4>L</h4>
                          <input type='radio' name="radio"/>
                          <span className={classes.checkmark}></span>
                          </label> 
                          </div>
                          <div>
                          <label className={classes.container}> <h4>XL</h4>
-                         <input type='radio' name="radio"/>
-                         <span className={classes.checkmark}></span>
-                         </label> 
-                         </div>
-                         <div>
-                         <label className={classes.container}> <h4>XXL</h4>
                          <input type='radio' name="radio"/>
                          <span className={classes.checkmark}></span>
                          </label> 

@@ -11,6 +11,11 @@ const Home = () => {
   return (
     <div>
         <Layout/>
+        <CardsRow title="Products" products={products.slice(0,2)}/>
+        <About/>
+        <Review/>
+        <Info />
+        <Shots/>
     </div>
   )
 }

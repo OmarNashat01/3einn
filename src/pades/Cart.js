@@ -65,8 +65,8 @@ const Cart = () => {
                 </h1>
             </div>
             <div>
-            <div className={classes.btn}>
-            <button onClick={showform}>Order Here</button>
+            <div className={classes.btn1}>
+              <button onClick={showform}>Order Here</button>
              </div> 
             </div>
         </div>

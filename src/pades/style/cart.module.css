@@ -59,12 +59,12 @@
     justify-content: space-between;
     margin: 2rem;
 }
-.btn {
+.btn1 {
     width: 70%;
     margin: auto;
 }
 
-.btn button {
+.btn1 button {
     width: 90%;
     border-radius: 5px;
     border: none;
@@ -81,7 +81,7 @@
     position: relative;
     left: 5%;
 }
-.btn button:hover {
+.btn1 button:hover {
     background-color: #1e690ba1;
 }
 .cartf h1 {

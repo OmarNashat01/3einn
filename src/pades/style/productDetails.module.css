@@ -141,6 +141,7 @@
 }
 .btn button:hover {
     opacity: .7;
+    background-color: #e22a2a;
 }
 .fixCon {
     display: flex;

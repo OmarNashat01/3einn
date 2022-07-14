@@ -1,11 +1,6 @@
 .layout {
     height: 92vh;
     position: relative;
-    background-image: linear-gradient(
-    to right bottom ,
-    rgba(0, 0, 0, 0.2),
-    rgba(0, 0, 0, 0.2)), 
-    url("file:///C:/Users/omare/Downloads/8Wggzk01.svg");
     background-size:auto;
     background-position: top ;
     padding-top: 8vh;

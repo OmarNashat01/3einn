@@ -6,9 +6,9 @@
 }
 .cartContainer h1 {
     text-align: center;
-    color: rgb(188,253,76);
+    color: rgb(247, 160, 84);
     font-size: 5rem;
-    font-weight: 400;
+    font-weight: 50;
     text-transform: uppercase;
     transition: .5s ease;
     padding-bottom: 0;

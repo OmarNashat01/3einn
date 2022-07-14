@@ -22,7 +22,7 @@
 }
 .details h1 {
     position: relative;
-    color: rgb(188,253,76);
+    color: rgb(247, 160, 84);
     font-size: 5rem;
     font-weight: 400;
 }
@@ -33,7 +33,7 @@
 .price {
     border-top: solid 1px;
     border-bottom: solid 1px;
-    border-color: rgba(188, 253, 76, 0.267);
+    border-color: rgba(247, 160, 84, 0.267);
     padding: 1rem;
     width: 95%;
 
@@ -113,7 +113,9 @@
     cursor:pointer;
     margin: auto;
     font-size: 2rem;
+    color: #333;
 }
+
 .fix {
     font-size: 4rem;
     cursor: pointer;

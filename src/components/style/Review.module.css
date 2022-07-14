@@ -3,7 +3,7 @@
     display: block;
     text-align: center;
     border-bottom: solid 2px;
-    border-color:rgba(188, 253, 76, 0.4);
+    border-color:rgba(247, 160, 84, 0.4);
     padding-bottom: 6rem;
 
     background-color: rgba(10,10,10,0.9);
@@ -15,7 +15,7 @@
 
 .vContainer h1 {
     text-align: center;
-    color: rgb(188,253,76);
+    color: rgb(247, 160, 84);
     font-size: 3rem;
     font-weight: 400;
     text-transform: capitalize;

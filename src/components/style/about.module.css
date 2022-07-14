@@ -2,7 +2,7 @@
     text-align: center;
     border-top: solid 0.9px;
     border-bottom: solid 0.9px;
-    border-color:rgba(188, 253, 76, 0.4);
+    border-color:rgba(247, 160, 84,0.6);
     padding: 5rem 0;
     background-color: rgba(0, 0, 0);
 }
@@ -15,7 +15,7 @@
     transition: .5s ease;
 }
 .aboutContainer h1 {
-    color: rgba(188, 253, 76);
+    color: rgb(247, 160, 84);
     font-size: 2.5rem;
     text-transform: uppercase;
 }

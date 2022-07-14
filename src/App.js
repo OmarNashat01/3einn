@@ -13,15 +13,6 @@ function App() {
       <Route path="/" exact>
       <Home/>
       </Route>
-      <Route path='/products'>
-        <Allproducts/>
-      </Route>
-      <Route path='/productdetails/:id'>
-        <ProductDetailes/>
-      </Route>
-      <Route to = '/cart'>
-        <Cart/>
-      </Route>
       </Switch>
      <Footer/>
     </div>

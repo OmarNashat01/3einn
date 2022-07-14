@@ -77,6 +77,10 @@
         width: 12px;
         height: 12px;
     }
+
+    .container .book{
+        height: 40vh;
+    }
 }
 
 @media screen and (max-width: 800px) {

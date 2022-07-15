@@ -56,12 +56,8 @@ const Cart = () => {
                     <span>{totalAmount}</span>
                 </h1>
                 <h1 className={classes.fix}>
-                    <span>Delivery: </span>
-                    <span>50</span>
-                </h1>
-                <h1 className={classes.fix}>
                     <span> Total: </span>
-                    <span>{totalAmount+50}</span>
+                    <span>{totalAmount}</span>
                 </h1>
             </div>
             <div>

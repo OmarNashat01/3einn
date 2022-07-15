@@ -56,6 +56,10 @@ const Cart = () => {
                     <span>{totalAmount}</span>
                 </h1>
                 <h1 className={classes.fix}>
+                    <span>Delivery: </span>
+                    <span>On request</span>
+                </h1>
+                <h1 className={classes.fix}>
                     <span> Total: </span>
                     <span>{totalAmount}</span>
                 </h1>

@@ -17,7 +17,7 @@ const storeReduser = (state=[],
              newItems[i] = updatedItem;
           }else{
               
-              updatedItem = {id: action.id , count : action.count, name: action.name, price : action.price , img:action.img}
+              updatedItem = {id: action.id , count : action.count, name: action.name, price : action.price , img:action.img, size:action.size}
               newItems = state.concat(updatedItem);
           }
        

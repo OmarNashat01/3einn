@@ -19,7 +19,9 @@ const dispatch= useDispatch();
             <div>
             <p><span>{props.product.count}</span> <span><CloseIcon  style={{ fontSize: 15 }}/></span> <span>{props.product.price}</span></p>
             </div>
-            <div></div>
+            <div>
+            <p>{props.product.size}</p>
+            </div>
         </div>
         <div className= {classes.control}>
             <button onClick={()=> dispatch({type: "remove", id: props.product.id})}><DeleteOutlineIcon style={{ fontSize: 30, color:'red' }}/></button>

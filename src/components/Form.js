@@ -15,7 +15,7 @@ function Formfunc () {
     const [mssg1,setmssg1]=useState();
     const [mssg2,setmssg2]=useState();
     useEffect (()=>{
-        const ms=Data.map(b=>`Product Name : ${b.name}, count:${b.count} `)
+        const ms=Data.map(b=>`Product Name : ${b.name}, count:${b.count}, Size:${b.size} `)
         console.log(JSON.stringify(ms))
         let mm1 = ms[0];
         setmssg1(mm1);

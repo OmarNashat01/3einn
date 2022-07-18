@@ -13,11 +13,18 @@ const dispatch = useDispatch()
     const [product,setProduct] = useState({});
     const [count,setCount]= useState(1)
 
+  const [selected, setSelected] = useState('S');
+
+  const handleChange = event => {
+    console.log(event.target.value);
+    setSelected(event.target.value);
+  };
+
     useEffect(()=>{
         setProduct(products[id]);
     },[id])
 const addHandeler = ()=>{
-  dispatch({type: "add", count: count, id: id , name: product.name, price:product.price , img: product.img})
+  dispatch({type: "add", count: count, id: id , name: product.name, price:product.price , img: product.img, size:selected})
 }
   return (
     <>
@@ -37,25 +44,25 @@ const addHandeler = ()=>{
                  <div className={classes.fixCon}>
                        <div className={classes.lableCon}>
                          <label className={classes.container}> <h4>S</h4>
-                         <input type='radio'  name="radio"/>
+                         <input type='radio'  name="radio" value="S" checked={selected === 'S'} onChange={handleChange}/>
                          <span className={classes.checkmark}></span>
                          </label> 
                          </div>
                          <div>
-                         <label className={classes.container}> <h4>M</h4>
-                         <input type='radio' name="radio"/>
+                         <label className={classes.container} > <h4>M</h4>
+                         <input type='radio' name="radio" value="M" checked={selected === 'M'} onChange={handleChange}/>
                          <span className={classes.checkmark}></span>
                          </label> 
                          </div>
                          <div>
                          <label className={classes.container}> <h4>L</h4>
-                         <input type='radio' name="radio"/>
+                         <input type='radio' name="radio" value="L" checked={selected === 'L'} onChange={handleChange}/>
                          <span className={classes.checkmark}></span>
                          </label> 
                          </div>
                          <div>
                          <label className={classes.container}> <h4>XL</h4>
-                         <input type='radio' name="radio"/>
+                         <input type='radio' name="radio" value="XL" checked={selected === 'XL'} onChange={handleChange}/>
                          <span className={classes.checkmark}></span>
                          </label> 
                          </div>

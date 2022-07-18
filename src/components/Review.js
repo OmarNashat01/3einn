@@ -4,6 +4,7 @@ import Slider from './Slider'
 import Rev1 from '../img/Rev1.jpg'
 import Rev2 from '../img/Rev2.jpg'
 import Rev3 from '../img/Rev3.jpg'
+import SliderR from './SliderR'
 const Review = () => {
   return (
     <div className={classes.vContainer}>
@@ -12,9 +13,7 @@ const Review = () => {
         </h1>
 
         <div className={classes.videoContainer}>
-            <Slider img1={Rev1}
-             img2={Rev2}
-             img3={Rev3}/>
+            <SliderR />
         </div>
     </div>
   )

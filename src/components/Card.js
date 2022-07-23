@@ -5,7 +5,7 @@ import { useHistory } from 'react-router-dom';
 const Card = ({product}) => {
   const history = useHistory();
   const clickHandler = () => {
-    if (product.quantity>0 && product.quantity < 2)
+    if (product.quantity>0 )
     {
       history.push(`/productdetails/${product.id}`);
     }

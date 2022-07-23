@@ -28,7 +28,7 @@ export const SliderData = [
         name: " ~ Eyad mowafk"
     },
     {
-        msg:  "8- Ahh gamel awe material bta3to helwa awee",
+        msg:  "Ahh gamel awe material bta3to helwa awee",
         name: "~ Aya Tamer"
     }
   ];

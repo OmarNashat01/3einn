@@ -40,7 +40,7 @@ const products = [
               image: img1_5
             }
           ],
-        quantity: 1,
+        quantity: 2,
         collection: 'T-shirts',
         id:0
 
@@ -63,7 +63,7 @@ const products = [
                 image: img2_3
             }
           ],
-        quantity: 2,
+        quantity: 1,
         collection: 'T-shirts',
         id:1
     },

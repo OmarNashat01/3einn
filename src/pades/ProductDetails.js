@@ -76,7 +76,7 @@ const addHandeler = ()=>{
              </div>
          </div>
          {
-           product.quantity >0 ? <div className={classes.btn}>
+           product.quantity === 1? <div className={classes.btn}>
            <button onClick={addHandeler}>ADD TO CART</button>
        </div> : <div className={classes.btns}>
                  <button className={classes.soldout}> Sold Out</button>

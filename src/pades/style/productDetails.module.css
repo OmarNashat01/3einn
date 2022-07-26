@@ -50,7 +50,6 @@
     -ms-user-select: none;
     user-select: none;
     display: flex;
-
   }
 
   .container h4 {
@@ -160,6 +159,24 @@
     background-color: #333;
 }
 
+.cartmssg{
+    text-align: center;
+   margin-top: 5px;
+   font-size: 15px;
+   font-family: 'Courier New', Courier, monospace;
+   font-weight: 100;
+   color: #ccc;
+   font-style: italic;
+   text-transform: none;
+   animation: cssAnimation 5s 1;
+   opacity: 0; 
+}
+@keyframes cssAnimation {
+    0%  { opacity: 1}
+    80% { opacity: 0}
+  }
+
+
 @media screen and (max-width: 500px) {
     .details h1 { 
         font-size: 4rem;
@@ -168,5 +185,9 @@
     .container h4 {
         font-weight: 200;
         font-size: 2rem;
+  }
+  .cartmssg{
+    margin-top: 10px;
+    font-size: 12px;
   }
 }

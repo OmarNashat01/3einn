@@ -39,7 +39,7 @@ cursor: pointer;
 }
 .imgContainerSold img {
     opacity: .5;
-    filter: blur(4px);
+    filter: blur(1px);
 }
 
 .soldOut {
@@ -72,4 +72,25 @@ cursor: pointer;
     background-color: transparent;
     font-size: 40px;
     
+}
+
+.sold {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    top: 20px;
+    left: 10px;
+    background-color: rgb(196, 196, 196);
+    padding: 10px;
+    border-radius: 5px;
+    text-align: center;
+    color: rgb(0, 0, 0);
+    font-size: 1.5rem;
+    font-weight: 400;
+    text-transform: capitalize;
+    transition: .5s ease;
+
+}
+.sold p {
+    margin-left: 5px;
 }

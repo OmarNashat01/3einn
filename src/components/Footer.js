@@ -11,7 +11,7 @@ const Footer = () => {
               <p>
                 Created by MONTU
               </p>
-              <a href="http://www.montu.website/">
+              <a href="https://montu-eg.com/">
                 <LinkIcon style={{fontSize:25}} />
               </a>
               <a href="https://www.facebook.com/montuxtech/" ClassName={classes.socialLink}>

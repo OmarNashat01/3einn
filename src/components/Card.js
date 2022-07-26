@@ -1,6 +1,7 @@
 import React from 'react'
 import classes from './style/card.module.css' 
 import { useHistory } from 'react-router-dom';
+import WatchLaterIcon from '@mui/icons-material/WatchLater';
 
 const Card = ({product}) => {
   const history = useHistory();
@@ -19,7 +20,8 @@ const Card = ({product}) => {
         </div>
         }
         { product.quantity===2 &&
-        <div className={classes.soldOut}>
+        <div className={classes.sold}>
+          <WatchLaterIcon/>
           <p> Out of stock! </p>
         </div>
         }

@@ -12,6 +12,7 @@ const dispatch = useDispatch()
     const {id} = useParams();
     const [product,setProduct] = useState({});
     const [count,setCount]= useState(1)
+    const [mssg,setmssg]= useState(0);
 
   const [selected, setSelected] = useState('S');
 
@@ -25,6 +26,7 @@ const dispatch = useDispatch()
     },[id])
 const addHandeler = ()=>{
   dispatch({type: "add", count: count, id: id , name: product.name, price:product.price , img: product.img, size:selected})
+  setmssg(1);
 }
   return (
     <>
@@ -78,6 +80,7 @@ const addHandeler = ()=>{
          {
            product.quantity === 1? <div className={classes.btn}>
            <button onClick={addHandeler}>ADD TO CART</button>
+           {mssg ? <h5 className={classes.cartmssg}>Added succesfully to cart ✔</h5>: null}
        </div> : <div className={classes.btns}>
                  <button className={classes.soldout}> Sold Out</button>
              </div>
